@@ -11,11 +11,17 @@ document.querySelector(".x-btn").addEventListener("click", () => {
 })
 
 document.querySelector(".form-input:nth-child(1)").addEventListener("blur", () =>{
-    var regfname = /^[A-Za-z\s\'\-]$/
+    var regfname = /^[A-Za-z\s\'\-]{0,20}$/
     var fname = document.querySelector(".form-input:nth-child(1)").value
-    if(regfname.test(fname) || fname == ""){
+    if(regfname.test(fname) && fname != ""){
         fname = fname;
         document.querySelector("#fnamePrompt").innerHTML = ""
+    }
+    else if(fname == ""){
+        document.querySelector("#fnamePrompt").innerHTML = "Please Type a Name"
+    }
+    else if(fname.length > 20){
+        document.querySelector("#fnamePrompt").innerHTML = "Max 20 character"
     }
     else{
         document.querySelector("#fnamePrompt").innerHTML = "Please Use Only Letters"

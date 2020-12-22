@@ -34,9 +34,9 @@
     transition: all .3s
 }
 
-.banner-heading:hover{
-    border-top: 5px solid rgb(82, 135, 106) ;
-    border-bottom: 5px solid rgb(82, 135, 106); 
+.banner-heading:hover {
+    border-top: 5px solid rgb(82, 135, 106);
+    border-bottom: 5px solid rgb(82, 135, 106);
 }
 
 
@@ -150,7 +150,8 @@
 .form-input {
     font-size: 18px;
     width: 85%;
-    color:#cc683c; ;
+    color: #cc683c;
+    ;
     font-family: 'Oswald', sans-serif;
     letter-spacing: 1px;
     outline: 0;
@@ -175,9 +176,9 @@
     margin-top: 55px;
 }
 
-#fnamePrompt{
+#fnamePrompt {
     position: absolute;
-    top:85%;
+    top: 85%;
     color: #cc683c;
 }
 
@@ -247,10 +248,12 @@
     border: 2px solid #fff;
     border-radius: 50px;
     cursor: pointer;
-    transition: all .3s ;
+    transition: all .3s;
 }
-.sign-up-form button:hover{
-    border:2px solid #cc683c; ;
+
+.sign-up-form button:hover {
+    border: 2px solid #cc683c;
+    ;
 }
 
 
@@ -282,7 +285,7 @@
     transition: color .3s;
 }
 
-.x-btn:hover{
+.x-btn:hover {
     color: rgb(82, 135, 106);
 }
 
